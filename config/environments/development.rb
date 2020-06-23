@@ -22,6 +22,7 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
   config.active_support.deprecation = :log
   config.active_record.migration_error = :page_load
+  config.active_record.time_zone_aware_types = [:datetime, :time]
   config.assets.debug = true
   config.assets.quiet = true
   config.action_view.raise_on_missing_translations = true

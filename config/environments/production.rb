@@ -24,6 +24,7 @@ Rails.application.configure do
   end
 
   config.active_record.dump_schema_after_migration = false
+  config.active_record.time_zone_aware_types = [:datetime, :time]
   config.middleware.use Rack::Deflater
   config.static_cache_control = "public, max-age=31557600"
   config.action_mailer.default_url_options = {
