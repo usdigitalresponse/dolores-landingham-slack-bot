@@ -16,7 +16,9 @@ Vagrant.configure(2) do |config|
   set -e
 
   curl -sSL https://rvm.io/mpapis.asc | gpg --import -
-    curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
+  curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
+  curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
+
   export RUBY_VERSION="2.7.1"
 
   source "$HOME/.rvm/scripts/rvm"
