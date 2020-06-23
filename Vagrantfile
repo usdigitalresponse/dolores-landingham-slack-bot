@@ -17,13 +17,14 @@ Vagrant.configure(2) do |config|
 
   curl -sSL https://rvm.io/mpapis.asc | gpg --import -
     curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
+  export RUBY_VERSION="2.7.1"
 
   source "$HOME/.rvm/scripts/rvm"
-  rvm install 2.3.1
-  rvm use 2.3.1
+  rvm install $RUBY_VERSION
+  rvm use $RUBY_VERSION
 
   echo 'source "$HOME/.rvm/scripts/rvm"' >> .bashrc
-  echo "rvm use 2.3.1" >> .bashrc
+  echo "rvm use $RUBY_VERSION" >> .bashrc
 
   # install postgres
   sudo apt-get -y install postgresql postgresql-contrib libpq-dev node npm git
