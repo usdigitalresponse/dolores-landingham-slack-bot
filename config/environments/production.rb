@@ -23,6 +23,8 @@ Rails.application.configure do
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
 
+  config.middleware.insert_before Rack::Runtime, Rack::Timeout, service_timeout: (ENV["RACK_TIMEOUT"] || 10).to_i
+
   config.active_record.dump_schema_after_migration = false
   config.active_record.time_zone_aware_types = [:datetime, :time]
   config.middleware.use Rack::Deflater
@@ -31,5 +33,3 @@ Rails.application.configure do
     host: ENV.fetch("APPLICATION_HOST"),
   }
 end
-
-Rack::Timeout.timeout = (ENV["RACK_TIMEOUT"] || 10).to_i
