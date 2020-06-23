@@ -27,15 +27,13 @@ Vagrant.configure(2) do |config|
   echo "rvm use $RUBY_VERSION" >> .bashrc
 
   # install postgres
-  sudo apt-get -y install postgresql postgresql-contrib libpq-dev node npm git
+  sudo apt-get -y install postgresql postgresql-contrib libpq-dev nodejs npm git
   sudo -u postgres psql -c "CREATE USER vagrant WITH PASSWORD 'vagrant';"
   sudo -u postgres psql -c "ALTER USER vagrant CREATEDB;"
 
   echo "localhost:5432:*:vagrant:vagrant" > .pgpass
   chmod 0600 .pgpass
 
-  sudo mv /usr/sbin/node /usr/sbin/node-bak
-  sudo ln -s /usr/bin/nodejs /usr/bin/node
   sudo npm install -g phantomjs
 
   cd /vagrant
