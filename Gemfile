@@ -37,7 +37,7 @@ group :development, :test do
   gem "bundler-audit", ">= 0.5.0", require: false
   gem "byebug"
   gem "dotenv-rails"
-  gem "factory_girl_rails"
+  gem "factory_bot_rails"
   gem "pry-rails"
   gem "rspec-rails", "~> 3.5.0.beta4"
 end

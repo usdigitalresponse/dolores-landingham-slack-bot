@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   sequence(:slack_username) { |n| "testusername#{n}" }
   sequence(:slack_user_id) { |n| "ID123#{n}" }
 
