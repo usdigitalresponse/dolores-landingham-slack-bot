@@ -19,7 +19,7 @@ Vagrant.configure(2) do |config|
   curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
   curl -sSL https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
 
-  export RUBY_VERSION="2.7.1"
+  export RUBY_VERSION="2.6.6"
 
   source "$HOME/.rvm/scripts/rvm"
   rvm install $RUBY_VERSION
