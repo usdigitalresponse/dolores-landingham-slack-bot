@@ -12,11 +12,12 @@ test:
   <<: *default
   database: dolores-landingham-bot_test
 
-production: &deploy
-  encoding: utf8
+production: &default
+  adapter: postgresql
+  encoding: unicode
   min_messages: warning
-  pool: <%= [ENV.fetch("MAX_THREADS", 5), ENV.fetch("DB_POOL", 5)].max %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
   url:  <%= ENV.fetch("DATABASE_URL", "") %>
 
-staging: *deploy
+staging: *default
