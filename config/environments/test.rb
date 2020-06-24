@@ -16,5 +16,5 @@ Rails.application.configure do
   config.assets.raise_runtime_errors = true
   config.action_mailer.default_url_options = { host: "www.example.com" }
   config.active_job.queue_adapter = :inline
-  config.active_record.time_zone_aware_types = [:datetime, :time]
+  config.active_record.time_zone_aware_types = [:datetime]
 end

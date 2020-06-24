@@ -26,7 +26,7 @@ Rails.application.configure do
   config.middleware.insert_before Rack::Runtime, Rack::Timeout, service_timeout: (ENV["RACK_TIMEOUT"] || 10).to_i
 
   config.active_record.dump_schema_after_migration = false
-  config.active_record.time_zone_aware_types = [:datetime, :time]
+  config.active_record.time_zone_aware_types = [:datetime]
   config.middleware.use Rack::Deflater
   config.public_file_server.headers = { 'Cache-Control' => 'public, max-age=31557600' }
   config.action_mailer.default_url_options = {
