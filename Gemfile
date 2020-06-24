@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 
 ruby "2.7.1"
-gem "rails", "~> 5.0.0"
+gem "rails", "~> 5.2"
 
 gem "active_record_union"
-gem "acts-as-taggable-on", "4.0.0.pre"
+gem "acts-as-taggable-on"
 gem "autoprefixer-rails"
 gem "business_time"
 gem "bourbon"
@@ -18,12 +18,12 @@ gem "jquery-rails"
 gem "kaminari"
 gem "neat"
 gem "omniauth-github-team-member"
-gem "paranoia", "2.2.0.pre"
+gem "paranoia"
 gem "pg"
 gem "puma"
 gem "rack-canonical-host"
 gem "recipient_interceptor"
-gem "sass-rails", "~> 5.0"
+gem "sassc-rails"
 gem "simple_form"
 gem "slack-ruby-client"
 gem "sprockets", ">= 3.0.0"
@@ -39,7 +39,7 @@ group :development, :test do
   gem "dotenv-rails"
   gem "factory_bot_rails"
   gem "pry-rails"
-  gem "rspec-rails", "~> 3.5.0.beta4"
+  gem "rspec-rails"
 end
 
 group :development do
