@@ -8,6 +8,6 @@ module MigrationHelperMethods
   end
 
   def sanitize(*args)
-    ActiveRecord::Base.sanitize(*args)
+    ActiveRecord::Base.connection.quote(*args)
   end
 end
