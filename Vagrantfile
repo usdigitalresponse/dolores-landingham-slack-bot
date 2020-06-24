@@ -40,7 +40,7 @@ Vagrant.configure(2) do |config|
 
   cd /vagrant
 
-  gem install bundle
+  gem install bundler bundle
   cp .sample.env .env
 
   ./bin/setup
