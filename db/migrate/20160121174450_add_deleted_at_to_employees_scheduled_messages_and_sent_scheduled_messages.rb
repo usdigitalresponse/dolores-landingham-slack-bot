@@ -1,4 +1,4 @@
-class AddDeletedAtToEmployeesScheduledMessagesAndSentScheduledMessages < ActiveRecord::Migration
+class AddDeletedAtToEmployeesScheduledMessagesAndSentScheduledMessages < ActiveRecord::Migration[4.2]
   def change
     add_column :employees, :deleted_at, :datetime
     add_column :scheduled_messages, :deleted_at, :datetime

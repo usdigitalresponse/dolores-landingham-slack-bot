@@ -1,4 +1,4 @@
-class CreateScheduledMessages < ActiveRecord::Migration
+class CreateScheduledMessages < ActiveRecord::Migration[4.2]
   def change
     create_table :scheduled_messages do |t|
       t.timestamps null: false
