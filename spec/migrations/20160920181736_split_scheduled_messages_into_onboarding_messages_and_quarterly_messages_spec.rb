@@ -19,10 +19,7 @@ describe SplitScheduledMessagesIntoOnboardingMessagesAndQuarterlyMessages do
 
   def migrate_to_version(version)
     ActiveRecord::Migration.verbose = false
-    ActiveRecord::Migrator.migrate(
-      ActiveRecord::Tasks::DatabaseTasks.migrations_paths,
-      version,
-    )
+    ActiveRecord::MigrationContext.new(ActiveRecord::Tasks::DatabaseTasks.migrations_paths).migrate(version)
     ActiveRecord::Base.clear_cache!
   end
 
