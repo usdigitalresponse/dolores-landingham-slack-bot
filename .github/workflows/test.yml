@@ -7,7 +7,7 @@ on:
     branches: [ master, staging ]
 
 env:
-  SLACK_API_TOKEN: 'CHANGE_ME'
+  SLACK_API_TOKEN: ${{ secrets.SlackApiKey }}
   ASSET_HOST: localhost:3000
   APPLICATION_HOST: localhost:3000
   RACK_ENV: test
