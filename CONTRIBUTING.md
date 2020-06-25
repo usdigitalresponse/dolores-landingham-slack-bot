@@ -135,13 +135,29 @@ variables.  If you are internal to 18F and would like access to these configs,
 you can contact Jessie Young. Otherwise, you can create a Slack bot
 [here](https://18f.slack.com/services/new/bot).
 
-### Authentication
+#### Slack application
+
+Create a [Slack application](https://api.slack.com/apps).
+
+1. Set the [display name](https://api.slack.com/apps/A016530DGA0/app-home) to "Mrs. Landingham" (or another value of your choice)
+
+1. Grant the `im:write` and `users:read` scopes
+
+1. Obtain the value for `SLACK_API_TOKEN` from "Bot User OAuth Access Token" on [OAuth & Permissions](https://api.slack.com/apps/A016530DGA0/oauth).
+
+1. Install the application to your workspace
+
+#### Secret key base
+
+Generate a value for `SECRET_KEY_BASE` by running `rake secret`.
+
+#### GitHub authentication
 
 We are using [OmniAuth GitHub Team
 Auth](https://github.com/jonmagic/omniauth-github-team-member) for
 authentication.
 
-1. Create a [GitHub OAuth application](https://developer.github.com/v3/oauth/)
+1. Create a [GitHub OAuth application](https://github.com/settings/developers)
 for development with the following:
 
   For Homepage url:
@@ -152,19 +168,18 @@ for development with the following:
 
   `http://localhost:5000/auth/githubteammember/callback`
 
-1. Save the client id and client secret from your new application in the `.env`
-file in the app directory as `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` (see
-.sample.env for formatting help)
+1. Obtain the value for `GITHUB_CLIENT_ID` from `Client ID` on your application page.
 
-1. Edit the `GITHUB_TEAM_ID` in your local `.env` file to match the id of a
-GitHub team that you belong to.
+1. Obtain the value for `GITHUB_CLIENT_SECRET` from `Client Secret` on your application page.
 
-The easiest way to find a Team ID on GitHub is to generate an [access
+1. Obtain the value for `GITHUB_TEAM_ID` from the GitHub API:
+
+1.1 Generate an [access
 token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
-and then curl with it:
+and then obtain with it:
 
 ```bash
-curl https://api.github.com/user/teams?access_token=YOUR_ACCESS_TOKEN
+curl https://api.github.com/user/teams -H 'Authorization: token YOUR_ACCESS_TOKEN'
 ```
 
 If you do not belong to a GitHub team or would like to set up the app without
