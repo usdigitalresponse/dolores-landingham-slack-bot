@@ -15,7 +15,7 @@ class FakeSlackApi < Sinatra::Base
     json_response 200, "users_list.json"
   end
 
-  post "/api/im.open" do
+  post "/api/conversations.open" do
     json_response 200, "im_open.json"
   end
 
