@@ -6,6 +6,16 @@ on:
   push:
     branches: [ master, staging ]
 
+env:
+  SLACK_API_TOKEN: 'CHANGE_ME'
+  ASSET_HOST: localhost:3000
+  APPLICATION_HOST: localhost:3000
+  RACK_ENV: test
+  EXECJS_RUNTIME: Node
+  GITHUB_CLIENT_ID: consumer_public_key
+  GITHUB_CLIENT_SECRET: consumer_secret_key
+  GITHUB_TEAM_ID: yourteamid
+
 jobs:
   test:
     runs-on: ubuntu-latest
