@@ -23,7 +23,7 @@ class AuthController < ApplicationController
   end
 
   def auth_email
-    info.email
+    info.email || auth_hash.credentials["emails"].first
   end
 
   def info
