@@ -1,0 +1,2 @@
+port: 5000
+formation: release=0,web=1,worker=1,clock=1

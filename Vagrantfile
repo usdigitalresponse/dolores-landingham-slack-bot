@@ -42,6 +42,7 @@ Vagrant.configure(2) do |config|
 
   gem install bundler bundle
   cp .sample.env .env
+  cp .sample.foreman .foreman
 
   ./bin/setup
   SHELL
