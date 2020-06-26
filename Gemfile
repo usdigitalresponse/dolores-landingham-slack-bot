@@ -17,7 +17,7 @@ gem "holidays"
 gem "jquery-rails"
 gem "kaminari"
 gem "neat"
-gem "omniauth-github-team-member"
+gem "omniauth-github-team-member", github: 'usdigitalresponse/omniauth-github-team-member'
 gem "paranoia"
 gem "pg"
 gem "puma"
