@@ -23,8 +23,7 @@ class AuthController < ApplicationController
   end
 
   def auth_email
-    raise auth_hash.credentials.inspect unless info.email
-    info.email || auth_hash.credentials["emails"].first
+    info.email || auth_hash.credentials["email"].first
   end
 
   def info
