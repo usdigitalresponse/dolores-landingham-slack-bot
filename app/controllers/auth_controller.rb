@@ -9,7 +9,7 @@ class AuthController < ApplicationController
         flash[:success] = I18n.t('controllers.auth_controller.successes.oauth_callback')
         redirect_to root_path
       else
-        render plain: "Please make sure your email address is public on your GitHub profile" and return
+        render plain: "No email address found" and return
       end
     else
       render :forbidden
