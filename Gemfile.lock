@@ -371,37 +371,37 @@ DEPENDENCIES
   bundler-audit (>= 0.5.0)
   business_time
   byebug
-  capybara (>= 2.6.2)
+  capybara (>= 3.34.0)
   clockwork
   daemons
   database_cleaner
   delayed_job_active_record
-  dotenv-rails
-  factory_bot_rails
+  dotenv-rails (>= 2.7.6)
+  factory_bot_rails (>= 6.1.0)
   flutie
   foreman
   holidays
-  jquery-rails
-  kaminari
+  jquery-rails (>= 4.4.0)
+  kaminari (>= 1.2.1)
   listen
   neat
   omniauth-github-team-member!
-  omniauth-rails_csrf_protection (~> 0.1)
+  omniauth-rails_csrf_protection (~> 0.1, >= 0.1.2)
   paranoia
   pg
-  poltergeist
+  poltergeist (>= 1.18.1)
   pry-rails
   puma
   rack-canonical-host
   rack-timeout
-  rails (~> 5.2)
+  rails (~> 5.2, >= 5.2.4.4)
   rails_stdout_logging
   recipient_interceptor
-  rspec-rails
+  rspec-rails (>= 4.0.2)
   rubocop
-  sassc-rails
+  sassc-rails (>= 2.1.2)
   shoulda-matchers
-  simple_form
+  simple_form (>= 5.0.3)
   simplecov
   sinatra
   slack-ruby-client
@@ -410,7 +410,7 @@ DEPENDENCIES
   sprockets (>= 3.0.0)
   sprockets-es6
   timecop
-  title
+  title (>= 0.0.8)
   uglifier
   webmock
 
