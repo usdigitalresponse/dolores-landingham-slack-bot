@@ -6,7 +6,7 @@
   </head>
   <body>
     <% unless current_user %>
-      <a href="/auth/githubteammember">Sign in with GitHub</a>
+      <%= link_to "Sign in with GitHub", "/auth/githubteammember", method: :post %>
     <% end %>
   </body>
 </html>
