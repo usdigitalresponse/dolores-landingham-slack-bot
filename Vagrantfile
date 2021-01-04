@@ -15,9 +15,13 @@ Vagrant.configure(2) do |config|
   set -x
   set -e
 
-  curl -sSL https://rvm.io/mpapis.asc | gpg --import -
-  curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
-  curl -sSL https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
+  # mpapis@gmail.com
+  curl -sSL https://rvm.io/mpapis.asc | gpg --batch --import -; echo 409B6B1796C275462A1703113804BB82D39DC0E3:6: | gpg --batch --import-ownertrust
+
+  # piotr.kuczynski@gmail.com
+  curl -sSL https://rvm.io/pkuczynski.asc | gpg --batch --import -; echo 7D2BAF1CF37B13E2069D6956105BD0E739499BDB:6: | gpg --batch --import-ownertrust
+
+  curl -sSL https://get.rvm.io | bash -s stable --autolibs=enabled --ruby=2.6.6
 
   export RUBY_VERSION="2.6.6"
 
