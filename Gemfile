@@ -18,6 +18,7 @@ gem "jquery-rails"
 gem "kaminari"
 gem "neat"
 gem "omniauth-github-team-member", github: 'usdigitalresponse/omniauth-github-team-member'
+gem "omniauth-rails_csrf_protection", '~> 0.1'
 gem "paranoia"
 gem "pg"
 gem "puma"
