@@ -23,6 +23,9 @@ Vagrant.configure(2) do |config|
 
   curl -sSL https://get.rvm.io | bash -s stable --autolibs=enabled --ruby=2.6.6
 
+  # autoprefixer-rails requires node > 10
+  curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
   export RUBY_VERSION="2.6.6"
 
   source "$HOME/.rvm/scripts/rvm"
