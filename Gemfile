@@ -17,7 +17,7 @@ gem "holidays"
 gem "jquery-rails", ">= 4.4.0"
 gem "kaminari", ">= 1.2.1"
 gem "neat"
-gem "omniauth-github-team-member", github: 'usdigitalresponse/omniauth-github-team-member'
+gem "omniauth-github-team-member"
 gem "omniauth-rails_csrf_protection", "~> 0.1", ">= 0.1.2"
 gem "paranoia"
 gem "pg"

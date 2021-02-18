@@ -1,10 +1,3 @@
-GIT
-  remote: https://github.com/usdigitalresponse/omniauth-github-team-member.git
-  revision: c440fde2d28ec9f9ce3188be8b1f951f37c93a09
-  specs:
-    omniauth-github-team-member (2.1)
-      omniauth-github
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -187,13 +180,15 @@ GEM
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
-    omniauth (2.0.2)
+    omniauth (2.0.3)
       hashie (>= 3.4.6)
       rack (>= 1.6.2, < 3)
       rack-protection
     omniauth-github (2.0.0)
       omniauth (~> 2.0)
       omniauth-oauth2 (~> 1.7.1)
+    omniauth-github-team-member (2.1.0)
+      omniauth-github
     omniauth-oauth2 (1.7.1)
       oauth2 (~> 1.4)
       omniauth (>= 1.9, < 3)
@@ -391,7 +386,7 @@ DEPENDENCIES
   kaminari (>= 1.2.1)
   listen
   neat
-  omniauth-github-team-member!
+  omniauth-github-team-member
   omniauth-rails_csrf_protection (~> 0.1, >= 0.1.2)
   paranoia
   pg
