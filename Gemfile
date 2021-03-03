@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 ruby "2.6.6"
-gem "rails", "~> 5.2", ">= 5.2.4.5"
+gem "rails", "~> 6.0", ">= 6.0.3.5"
 
 gem "active_record_union"
 gem "acts-as-taggable-on"
@@ -25,7 +25,7 @@ gem "puma"
 gem "rack-canonical-host"
 gem "recipient_interceptor"
 gem "sassc-rails", ">= 2.1.2"
-gem "simple_form", ">= 5.0.3"
+gem "simple_form", ">= 5.1.0"
 gem "slack-ruby-client"
 gem "sprockets", ">= 3.0.0"
 gem "sprockets-es6"
