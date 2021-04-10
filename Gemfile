@@ -47,7 +47,7 @@ group :development do
   gem "listen"
   gem "spring"
   gem "spring-commands-rspec"
-  gem "rubocop", require: false
+  gem "rubocop", ">= 1.11.0", require: false
 end
 
 group :test do
@@ -58,7 +58,7 @@ group :test do
   gem "simplecov", require: false
   gem "sinatra"
   gem "timecop"
-  gem "webmock"
+  gem "webmock", ">= 3.12.1"
 end
 
 group :staging, :production do
