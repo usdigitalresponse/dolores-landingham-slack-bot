@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 ruby "2.6.6"
-gem "rails", "~> 5.2", ">= 5.2.4.5"
+gem "rails", "~> 5.2", ">= 5.2.6"
 
 gem "active_record_union"
 gem "acts-as-taggable-on"
@@ -25,7 +25,7 @@ gem "puma"
 gem "rack-canonical-host"
 gem "recipient_interceptor"
 gem "sassc-rails", ">= 2.1.2"
-gem "simple_form", ">= 5.0.3"
+gem "simple_form", ">= 5.1.0"
 gem "slack-ruby-client"
 gem "sprockets", ">= 3.0.0"
 gem "sprockets-es6"
@@ -40,7 +40,7 @@ group :development, :test do
   gem "dotenv-rails", ">= 2.7.6"
   gem "factory_bot_rails", ">= 6.1.0"
   gem "pry-rails"
-  gem "rspec-rails", ">= 4.0.2"
+  gem "rspec-rails", ">= 5.0.1"
 end
 
 group :development do
