@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 ruby "2.6.6"
-gem "rails", "~> 5.2", ">= 5.2.6"
+gem "rails", "~> 5.2", ">= 5.2.5"
 
 gem "active_record_union"
 gem "acts-as-taggable-on"
@@ -52,7 +52,7 @@ end
 
 group :test do
   gem "poltergeist", ">= 1.18.1"
-  gem "capybara", ">= 3.34.0"
+  gem "capybara", ">= 3.35.3"
   gem "database_cleaner"
   gem "shoulda-matchers"
   gem "simplecov", require: false
