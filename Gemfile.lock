@@ -159,7 +159,7 @@ GEM
     marcel (1.0.1)
     method_source (1.0.0)
     mini_mime (1.1.0)
-    mini_portile2 (2.5.0)
+    mini_portile2 (2.5.1)
     minitest (5.14.4)
     multi_json (1.15.0)
     multi_xml (0.6.0)
@@ -170,7 +170,7 @@ GEM
       bourbon (>= 4.0)
       sass (>= 3.3)
     nio4r (2.5.7)
-    nokogiri (1.11.3)
+    nokogiri (1.11.5)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     oauth2 (1.4.7)
@@ -376,7 +376,7 @@ DEPENDENCIES
   bundler-audit (>= 0.5.0)
   business_time
   byebug
-  capybara (>= 3.34.0)
+  capybara (>= 3.35.3)
   clockwork
   daemons
   database_cleaner
@@ -399,14 +399,14 @@ DEPENDENCIES
   puma
   rack-canonical-host
   rack-timeout
-  rails (~> 5.2, >= 5.2.4.5)
+  rails (~> 5.2, >= 5.2.5)
   rails_stdout_logging
   recipient_interceptor
-  rspec-rails (>= 4.0.2)
+  rspec-rails (>= 5.0.1)
   rubocop
   sassc-rails (>= 2.1.2)
   shoulda-matchers
-  simple_form (>= 5.0.3)
+  simple_form (>= 5.1.0)
   simplecov
   sinatra
   slack-ruby-client
