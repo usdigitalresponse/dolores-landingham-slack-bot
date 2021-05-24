@@ -210,7 +210,7 @@ GEM
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     public_suffix (4.0.6)
-    puma (5.2.2)
+    puma (5.3.1)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
@@ -376,7 +376,7 @@ DEPENDENCIES
   bundler-audit (>= 0.5.0)
   business_time
   byebug
-  capybara (>= 3.34.0)
+  capybara (>= 3.35.3)
   clockwork
   daemons
   database_cleaner
@@ -396,17 +396,17 @@ DEPENDENCIES
   pg
   poltergeist (>= 1.18.1)
   pry-rails
-  puma
+  puma (>= 5.3.1)
   rack-canonical-host
   rack-timeout
-  rails (~> 5.2, >= 5.2.4.5)
+  rails (~> 5.2, >= 5.2.5)
   rails_stdout_logging
   recipient_interceptor
-  rspec-rails (>= 4.0.2)
+  rspec-rails (>= 5.0.1)
   rubocop
   sassc-rails (>= 2.1.2)
   shoulda-matchers
-  simple_form (>= 5.0.3)
+  simple_form (>= 5.1.0)
   simplecov
   sinatra
   slack-ruby-client
