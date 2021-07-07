@@ -22,7 +22,7 @@ gem "omniauth-rails_csrf_protection", "~> 0.1", ">= 0.1.2"
 gem "paranoia"
 gem "pg"
 gem "puma", ">= 5.3.1"
-gem "rack-canonical-host"
+gem "rack-canonical-host", ">= 1.0.0"
 gem "recipient_interceptor"
 gem "sassc-rails", ">= 2.1.2"
 gem "simple_form", ">= 5.1.0"
@@ -58,7 +58,7 @@ group :test do
   gem "simplecov", require: false
   gem "sinatra"
   gem "timecop"
-  gem "webmock"
+  gem "webmock", ">= 3.12.2"
 end
 
 group :staging, :production do
